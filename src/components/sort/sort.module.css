@@ -1,0 +1,19 @@
+.sortContainer {
+  width: 180px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 599px;
+}
+
+.sortContainer > img {
+  margin-right: 8px;
+}
+
+.sortContainer > span {
+  color: var(--gray30-color);
+}

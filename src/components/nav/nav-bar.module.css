@@ -1,0 +1,44 @@
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navPersonContainer {
+  width: 825px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLogo {
+  width: 165px;
+  display: flex;
+  align-items: center;
+}
+
+.navLogo > img {
+  margin-right: 8px;
+}
+
+.navLogo > span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navAvatar {
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navAvatar > img {
+  margin-left: 16px;
+}
+
+.navAvatar > span {
+  font-weight: 600;
+}

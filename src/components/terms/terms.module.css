@@ -1,0 +1,42 @@
+.termsSectionContainer {
+  width: 825px;
+  margin-bottom: 46px;
+}
+
+.termsListContainer {
+  font-size: 16px;
+}
+
+.termsListContainer > ol li {
+  margin-top: 32px;
+}
+
+.termsListContainer ol ol {
+  margin-left: 30px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.termsListContainer ol ol li {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.termsFirstLi > span {
+  margin-top: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.termsFirstLi::before {
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.termsList {
+  counter-reset: li;
+}
+
+.termsList > li::before {
+  counter-increment: li;
+  content: counters(li, '.') '. ';
+}

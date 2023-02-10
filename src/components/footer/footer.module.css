@@ -1,0 +1,17 @@
+.footer {
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--black-20);
+  margin: 0 auto;
+}
+
+.footerSocialContainer {
+  width: 168px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

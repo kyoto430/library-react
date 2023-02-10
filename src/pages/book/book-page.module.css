@@ -1,0 +1,167 @@
+.bookPageContainer {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.breadcrumbContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  padding: 23px 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background: #f9f9fa;
+  color: #a7a7a7;
+}
+
+.breadcrumb {
+  width: 1110px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.aboutBookContainer {
+  width: 100%;
+  margin: 42px 0px;
+}
+
+.aboutBookWrapepr {
+  width: 1110px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.aboutBookImageContainer {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 64px;
+}
+
+.aboutBookImageContainer > img {
+  width: 445px;
+  height: 594px;
+}
+
+.aboutBookDescriptionContainer {
+  width: 635px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutBookTitleContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 62px;
+}
+
+.aboutBookTitleContainer > h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+
+.aboutBookTitleContainer > span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 32px;
+  color: #a7a7a7;
+}
+
+.aboutBookTitleContainer > button {
+  width: 350px;
+  height: 52px;
+  padding: 14px 95px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+  cursor: pointer;
+}
+
+.aboutBookDescriptionContainer {
+}
+
+.aboutBookSectionTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.aboutBookSectionTitle::after {
+  content: '';
+  display: block;
+  width: 350px;
+  margin: 16px 0px;
+  border: 1px solid #cfcfd8;
+}
+
+.aboutBookDescription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bookRating {
+}
+
+.contentBookContainer {
+  width: 100%;
+}
+
+.contentBookWrapper {
+  width: 1110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.contentBookRatingContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookRatingContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 24px;
+}
+
+.bookRating {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.contentBookInfoContainer {
+}
+
+.contentBookCommentsContainer {
+}
+
+.contentBookCommentsContainer {
+}
+
+.contentBookCommentsWrapper {
+}
+
+.contentBookCommentContainer {
+}

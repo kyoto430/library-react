@@ -1,0 +1,17 @@
+.bookTileContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21.5px;
+  margin-top: 32px;
+  margin-bottom: 62px;
+}
+
+.bookListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 21.5px;
+  margin-top: 32px;
+  margin-bottom: 62px;
+}

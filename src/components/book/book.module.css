@@ -1,0 +1,245 @@
+.bookTileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 190px;
+  height: 470px;
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 10px;
+}
+
+.bookListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 825px;
+  height: 218px;
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 10px;
+}
+
+.bookListWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px 24px 24px 16px;
+}
+
+.bookListContentWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 16px;
+}
+
+.bookRateContainer {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookImageEmptyContainer {
+  width: 174px;
+  height: 242px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9fa;
+  border: 1px solid #a7a7a7;
+  border-radius: 10px;
+}
+
+.bookImageEmptyListContainer {
+  width: 146px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9fa;
+  border: 1px solid #a7a7a7;
+  border-radius: 10px;
+}
+
+.bookImageContainer {
+  width: 174px;
+  height: 242px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9fa;
+  border: none;
+  border-radius: 10px;
+}
+
+.bookImageListContainer {
+  width: 146px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9fa;
+  border: none;
+  border-radius: 10px;
+}
+
+.bookImageListContainer > img {
+  width: 146px;
+  height: 170px;
+}
+
+.bookImage {
+  display: flex;
+}
+
+.bookRate {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  color: var(--gray30-color);
+  margin: 16px 8px 0px 8px;
+  gap: 6px;
+}
+
+.bookListRate {
+  display: flex;
+  flex-direction: row;
+  color: var(--gray30-color);
+  gap: 6px;
+}
+
+.bookTitleContainer {
+  margin: auto 8px;
+}
+
+.bookTitle {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.bookListTitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.bookSubtitle {
+  color: #727272;
+}
+
+.bookListSubtitle {
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bookAvailableButton {
+  width: 166px;
+  height: 40px;
+  margin: 28px 12px 16px 12px;
+  padding: 11px 23px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+  cursor: pointer;
+}
+
+.bookAvailableListButton {
+  width: 166px;
+  height: 40px;
+  padding: 11px 23px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+  cursor: pointer;
+}
+
+.bookBusyButton {
+  width: 166px;
+  height: 40px;
+  margin: 28px 12px 16px 12px;
+  padding: 11px 23px;
+  border: 1px solid #bfc4c9;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--gray30-color);
+  background: #f9f9fa;
+  cursor: pointer;
+}
+
+.bookBusyListButton {
+  width: 166px;
+  height: 40px;
+  padding: 11px 23px;
+  border: 1px solid #bfc4c9;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--gray30-color);
+  background: #f9f9fa;
+  cursor: pointer;
+}
+
+.bookBookedButton {
+  width: 166px;
+  height: 40px;
+  margin: 28px 12px 16px 12px;
+  padding: 11px 23px;
+  border: 1px solid #bfc4c9;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #363636;
+  background: #f9f9fa;
+  cursor: pointer;
+}
+
+.bookBookedListButton {
+  width: 166px;
+  height: 40px;
+  padding: 11px 23px;
+  border: 1px solid #bfc4c9;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #363636;
+  background: #f9f9fa;
+  cursor: pointer;
+}

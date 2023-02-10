@@ -1,17 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { Layout } from './components/layout'
+import { LayoutMainPage } from './components/layout-main-page'
+import { Terms } from './components/terms'
+import { MainPage } from './pages/main'
+
+import './index.css'
+import { BookPage } from './pages/book'
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
 root.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route element={<LayoutMainPage />}>
+            <Route path="/" element={<Navigate to="/books/all" />} />
+            <Route path="/books" element={<Navigate to="/books/all" />} />
+            <Route path="/books/:category" element={<MainPage />} />
+            <Route path="/terms" element={<Terms contentView="terms" />} />
+            <Route
+              path="/contract"
+              element={<Terms contentView="contract" />}
+            />
+          </Route>
+          <Route path="/books/:category/:bookId" element={<BookPage />} />
+        </Route>
+      </Routes>
+    </HashRouter>
   </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+)
