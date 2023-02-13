@@ -80,21 +80,6 @@
   color: #a7a7a7;
 }
 
-.aboutBookTitleContainer > button {
-  width: 350px;
-  height: 52px;
-  padding: 14px 95px;
-  border: none;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
-  cursor: pointer;
-}
-
 .aboutBookDescriptionContainer {
 }
 
@@ -118,7 +103,47 @@
   line-height: 24px;
 }
 
+.aboutBookTable {
+}
+
 .bookRating {
+}
+
+.contentBookInfoContainer {
+  margin: 62px 0px;
+}
+
+.aboutBookTableContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 145px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.aboutBookTable {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.aboutBookTable:first-child {
+  width: 330px;
+}
+
+.aboutBookTable:last-child {
+  width: 635px;
+}
+
+.aboutBookTable > tbody > tr > th {
+  padding: 16px 0px;
+  text-align: left;
+  color: #a7a7a7;
+}
+
+.aboutBookTable > tbody > tr > td {
+  padding-left: 50px;
 }
 
 .contentBookContainer {
@@ -145,6 +170,13 @@
   margin-right: 24px;
 }
 
+.bookRatingCommentContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
 .bookRating {
   font-weight: 700;
   font-size: 18px;
@@ -157,11 +189,43 @@
 .contentBookCommentsContainer {
 }
 
-.contentBookCommentsContainer {
+.contentBookCommentContainer {
+}
+
+.contentBookCommentInfoContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .contentBookCommentsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
 }
 
 .contentBookCommentContainer {
+}
+
+.contentBookComment {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.bookRateButton {
+  width: 350px;
+  height: 52px;
+  padding: 14px 100px;
+  margin: 42px 0px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+  cursor: pointer;
 }

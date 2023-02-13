@@ -5,9 +5,11 @@
   justify-content: center;
   align-items: center;
   padding: 8px 16px;
-  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
-    0px 1px 5px rgba(191, 196, 201, 0.24);
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2),
+    0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+  border: none;
   border-radius: 599px;
+  cursor: pointer;
 }
 
 .sortContainer > img {

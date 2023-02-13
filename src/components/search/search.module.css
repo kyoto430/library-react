@@ -3,15 +3,18 @@
   height: 38px;
   outline: none;
   border: none;
-  background: url(../../assets/images/main/navList/search-1.png) no-repeat left 5% bottom 50%;
+  background: url(../../assets/images/main/navList/search-1.png) no-repeat left
+    5% bottom 50%;
   padding: 11px 40px;
-  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
-    0px 1px 5px rgba(191, 196, 201, 0.24);
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2),
+    0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
   border-radius: 599px;
+  cursor: pointer;
 }
 
 .inputSearch:focus {
-  background: url(../../assets/images/main/navList/search-2.png) no-repeat left 5% bottom 50%;
+  background: url(../../assets/images/main/navList/search-2.png) no-repeat left
+    5% bottom 50%;
   caret-color: orangered;
 }
 
