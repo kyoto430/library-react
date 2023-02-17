@@ -25,3 +25,9 @@ input[type='search']::-webkit-search-cancel-button {
   width: 16px;
   background: url(../../assets/images/main/navList/close.png) no-repeat center;
 }
+
+@media (width: 320px) {
+  .inputSearch {
+    width: 100%;
+  }
+}

@@ -15,3 +15,12 @@
   margin-top: 16px;
   margin-bottom: 16px;
 }
+
+@media (width: 320px) {
+  .footer {
+    width: 100%;
+  }
+  .footerSocialContainer {
+    width: 100%;
+  }
+}

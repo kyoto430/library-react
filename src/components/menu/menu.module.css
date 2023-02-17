@@ -10,31 +10,17 @@
 
 .menu > details {
   width: 100%;
+  z-index: 999;
 }
 
 .menu > details > summary {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
   cursor: pointer;
-}
-
-/* .menu > details > summary::after {
-  content: '+';
-  margin: auto;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.menu > details[open] summary::after {
-  content: '-';
-} */
-
-.menu > details > summary > a > h2 {
-  /* width: 255px;
-  height: 34px; */
 }
 
 .menuList {
@@ -45,6 +31,10 @@
 }
 
 .menuListTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 274px;
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
@@ -93,4 +83,20 @@
 .link {
   background: none;
   border-bottom: none;
+}
+
+@media (width: 320px) {
+  .menu {
+    width: 100%;
+    height: 100%;
+    margin-right: 0px;
+  }
+
+  .menuListTitle {
+    width: 100%;
+  }
+
+  .menuList > li {
+    margin-left: 0px;
+  }
 }

@@ -229,3 +229,92 @@
   background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
   cursor: pointer;
 }
+
+@media (width: 320px) {
+  .bookPageContainer {
+    width: 100%;
+  }
+
+  .breadcrumbContainer {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .breadcrumb {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .aboutBookContainer {
+    width: 100%;
+  }
+
+  .aboutBookWrapepr {
+    width: 100%;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .aboutBookImageContainer {
+    display: flex;
+
+    align-items: center;
+    margin-bottom: 64px;
+  }
+
+  .aboutBookImageContainer {
+    flex-direction: column;
+  }
+  .aboutBookImageContainer > img {
+    width: 300px;
+    height: auto;
+  }
+
+  .aboutBookDescriptionContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutBookSectionTitle::after {
+    width: 100%;
+  }
+
+  .contentBookInfoContainer {
+    margin: 62px 0px;
+  }
+
+  .aboutBookTitleContainer > h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .aboutBookTableContainer {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .aboutBookTable:first-child {
+    width: 100%;
+  }
+
+  .aboutBookTable:last-child {
+    width: 100%;
+  }
+
+  .aboutBookTable > tbody > tr > td {
+    padding-left: 0px;
+  }
+
+  .contentBookContainer {
+    width: 100%;
+  }
+
+  .contentBookWrapper {
+    width: 100%;
+  }
+
+  .bookRateButton {
+    width: 300px;
+  }
+}

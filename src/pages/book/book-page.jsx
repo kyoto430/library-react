@@ -14,6 +14,7 @@ export const BookPage = () => {
   const params = useParams()
   const { bookId } = params
   const [book, setBook] = useState()
+  const [comments, setComments] = useState(API.comments.fetchAll())
 
   useEffect(() => {
     API.books.getById(bookId).then((data) => setBook(data))
@@ -160,74 +161,79 @@ export const BookPage = () => {
                 </table>
               </div>
             </div>
-            <div className={styles.contentBookCommentsContainer}>
-              <div className={styles.aboutBookSectionTitle}>
-                <span>Отзывы 2</span>
+            {comments && comments ? (
+              <div className={styles.contentBookCommentsContainer}>
+                <div className={styles.aboutBookSectionTitle}>
+                  <span>Отзывы 2</span>
+                </div>
+                <div className={styles.contentBookCommentsWrapper}>
+                  <div className={styles.contentBookCommentContainer}>
+                    <div className={styles.contentBookCommentInfoContainer}>
+                      <img src={commentAvatar} alt="avatar" />
+                      <span>Иван Иванов</span>
+                      <span>5 января 2019</span>
+                    </div>
+                    <div className={styles.bookRatingCommentContainer}>
+                      {book.rating && book.rating === 'empty' ? (
+                        <span>ещё нет оценок</span>
+                      ) : (
+                        renderRate(book.rating)
+                      )}
+                    </div>
+                  </div>
+                  <div>
+                    <div className={styles.contentBookCommentInfoContainer}>
+                      <img src={commentAvatar} alt="avatar" />
+                      <span>Николай Качков</span>
+                      <span>20 июня 2018</span>
+                    </div>
+                    <div className={styles.bookRatingCommentContainer}>
+                      {book.rating && book.rating === 'empty' ? (
+                        <span>ещё нет оценок</span>
+                      ) : (
+                        renderRate(book.rating)
+                      )}
+                    </div>
+                    <p className={styles.contentBookComment}>
+                      Учитывая ключевые сценарии поведения, курс на
+                      социально-ориентированный национальный проект не оставляет
+                      шанса для анализа существующих паттернов поведения. Для
+                      современного мира внедрение современных методик
+                      предоставляет широкие возможности для позиций, занимаемых
+                      участниками в отношении поставленных задач. Как уже
+                      неоднократно упомянуто, сделанные на базе
+                      интернет-аналитики выводы будут в равной степени
+                      предоставлены сами себе. Вот вам яркий пример современных
+                      тенденций — глубокий уровень погружения создаёт
+                      предпосылки для своевременного выполнения сверхзадачи. И
+                      нет сомнений, что акционеры крупнейших компаний,
+                      инициированные исключительно синтетически, превращены в
+                      посмешище, хотя само их существование приносит несомненную
+                      пользу обществу.
+                    </p>
+                  </div>
+                  <div>
+                    <div className={styles.contentBookCommentInfoContainer}>
+                      <img src={commentAvatar} alt="avatar" />
+                      <span>Екатерина Беляева</span>
+                      <span>18 февраля 2018</span>
+                    </div>
+                    <div className={styles.bookRatingCommentContainer}>
+                      {book.rating && book.rating === 'empty' ? (
+                        <span>ещё нет оценок</span>
+                      ) : (
+                        renderRate(book.rating)
+                      )}
+                    </div>
+                  </div>
+                </div>
+                <button className={styles.bookRateButton} type="button">
+                  оценить книгу
+                </button>
               </div>
-              <div className={styles.contentBookCommentsWrapper}>
-                <div className={styles.contentBookCommentContainer}>
-                  <div className={styles.contentBookCommentInfoContainer}>
-                    <img src={commentAvatar} alt="avatar" />
-                    <span>Иван Иванов</span>
-                    <span>5 января 2019</span>
-                  </div>
-                  <div className={styles.bookRatingCommentContainer}>
-                    {book.rating && book.rating === 'empty' ? (
-                      <span>ещё нет оценок</span>
-                    ) : (
-                      renderRate(book.rating)
-                    )}
-                  </div>
-                </div>
-                <div>
-                  <div className={styles.contentBookCommentInfoContainer}>
-                    <img src={commentAvatar} alt="avatar" />
-                    <span>Николай Качков</span>
-                    <span>20 июня 2018</span>
-                  </div>
-                  <div className={styles.bookRatingCommentContainer}>
-                    {book.rating && book.rating === 'empty' ? (
-                      <span>ещё нет оценок</span>
-                    ) : (
-                      renderRate(book.rating)
-                    )}
-                  </div>
-                  <p className={styles.contentBookComment}>
-                    Учитывая ключевые сценарии поведения, курс на
-                    социально-ориентированный национальный проект не оставляет
-                    шанса для анализа существующих паттернов поведения. Для
-                    современного мира внедрение современных методик
-                    предоставляет широкие возможности для позиций, занимаемых
-                    участниками в отношении поставленных задач. Как уже
-                    неоднократно упомянуто, сделанные на базе интернет-аналитики
-                    выводы будут в равной степени предоставлены сами себе. Вот
-                    вам яркий пример современных тенденций — глубокий уровень
-                    погружения создаёт предпосылки для своевременного выполнения
-                    сверхзадачи. И нет сомнений, что акционеры крупнейших
-                    компаний, инициированные исключительно синтетически,
-                    превращены в посмешище, хотя само их существование приносит
-                    несомненную пользу обществу.
-                  </p>
-                </div>
-                <div>
-                  <div className={styles.contentBookCommentInfoContainer}>
-                    <img src={commentAvatar} alt="avatar" />
-                    <span>Екатерина Беляева</span>
-                    <span>18 февраля 2018</span>
-                  </div>
-                  <div className={styles.bookRatingCommentContainer}>
-                    {book.rating && book.rating === 'empty' ? (
-                      <span>ещё нет оценок</span>
-                    ) : (
-                      renderRate(book.rating)
-                    )}
-                  </div>
-                </div>
-              </div>
-              <button className={styles.bookRateButton} type="button">
-                оценить книгу
-              </button>
-            </div>
+            ) : (
+              'No comments'
+            )}
           </div>
         </div>
       </section>

@@ -4,3 +4,9 @@
   align-items: flex-start;
   margin-top: 15px;
 }
+
+@media (width: 320px) {
+  .layoutMainPageContainer {
+    flex-direction: column;
+  }
+}
